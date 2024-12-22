@@ -1,0 +1,96 @@
+@import url(/menu/global.css);
+
+.tela-menu{
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  height: 100vh;
+  padding-left: 5rem;
+}
+.menu{
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  height: 30rem;
+  width: 30rem;
+  background-color: #1f1f1fd9;
+  border: solid 5px #000000;
+  border-radius: 10px;
+  padding: 0;
+  position: relative;
+}
+
+.menu::before{
+  display: block;
+  content: "X";
+  height: 1rem;
+  width: 1rem;
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  top: -1.5rem;
+  left: 0.3rem;
+  transform: rotate(30deg);
+}
+
+.menu::after{
+  display: block;
+  content: "o";
+  height: 1rem;
+  width: 1rem;
+  font-size: 5rem;
+  color: #fff;
+  position: absolute;
+  bottom: 3rem;
+  right: -1rem;
+  transform: rotate(30deg);
+}
+
+.titulo::after{
+  display: block;
+  content: "";
+  height: 0.3rem;
+  width: 4rem;
+  font-size: 5rem;
+  background-color: #fff;
+  position: absolute;
+  bottom: 18.3rem;
+  right: 3rem;
+}
+
+
+.banner{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.vermelho{
+  color: red;
+}
+.titulo{
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.button-menu{
+  width: 12rem;
+  height: 3em;
+  border-radius: 5px;
+  border:  solid 2px transparent;
+  background-color: #000000;
+  color: #fff;
+  transition: 0.1s;
+  text-transform: uppercase;
+  
+}
+
+.button-menu:hover{
+  width: 12rem;
+  height: 3em;
+  background-color: #171717;
+  border-color: #7a7979;
+}

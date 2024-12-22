@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/jogo/css/sytle.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="tela">
+    <h1 class="titulo">jogo da <span id="spanVelha">velha</span></h1>
+    <nav class="tela-dificuldade">
+
+      <ul class="dificuldade">
+        <li><button onclick="nivel(1)" class="button-dificuldade" id="facil">Facil</button></li>
+        <li><button onclick="nivel(2)" class="button-dificuldade" id="medio">Médio</button></li>
+        <li><button onclick="nivel(3)" class="button-dificuldade" id="dificil">Dificil</button></li>
+      </li><a class="button-dificuldade sair" href="/menu/menu.html">sair</a><li>
+      </ul>
+    </nav>
+    <main class="main">
+      <div class="jogo">
+        <span id="linha1"></span>
+        <span id="linha2"></span>
+        <span id="linha3"></span>
+        <span id="linha4"></span>
+        <span id="linha5"></span>
+        <button onclick="marcaX(0,'x')" class="button">-1</button>
+        <button onclick="marcaX(1,'x')" class="button">-1</button>
+        <button onclick="marcaX(2,'x')" class="button">-1</button>
+        <button onclick="marcaX(3,'x')" class="button">-1</button>
+        <button onclick="marcaX(4,'x')" class="button">-1</button>
+        <button onclick="marcaX(5,'x')" class="button">-1</button>
+        <button onclick="marcaX(6,'x')" class="button">-1</button>
+        <button onclick="marcaX(7,'x')" class="button">-1</button>
+        <button onclick="marcaX(8,'x')" class="button">-1</button>
+      </div>
+      <div class="inf">
+        <span id="vitoria">vitorias: </span>
+
+        <span id="derrota">derrotas: </span>
+      </div>
+      <div>
+        <button onclick="reniciar()" id="reiniciar">jogar Novamente</button>
+        
+      </div>
+    </main>
+  </div>
+  <script src="/jogo/script.js"></script>
+</body>
+
+</html>

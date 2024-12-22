@@ -1,0 +1,162 @@
+@import url(/menu/global.css);
+@import url(/jogo/css/estilosJava.css);
+body{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  background: linear-gradient(rgb(175, 242, 144),rgb(116, 244, 57), rgb(6, 149, 6));
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  transition: backgound 20.3s ease;
+}
+
+.tela{
+  background-color: rgba(36, 36, 36, 0.567);
+  width: 30rem;
+  height:40rem;
+  border-radius: 10px;
+  gap: 1rem;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+
+.tela-dificuldade{
+  display: grid;
+}
+.dificuldade{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+}
+.main{
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.button-dificuldade{
+  position: relative;
+  transform: 0.3s;
+  width: 4rem;
+  background: transparent;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  border: solid 1px rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 0.3rem 0;
+
+}
+#facil:hover{
+  color: rgb(0, 255, 0);
+  border-radius: 3px;
+  background-color: rgba(13, 206, 13, 0.381);
+}
+#medio:hover{
+  color: rgb(246, 255, 0);
+  background-color: rgba(208, 235, 3, 0.381);
+
+}
+#dificil:hover{
+  color: rgb(255, 0, 0);
+  background-color: rgba(255, 0, 0, 0.381);
+
+}
+
+.button-dificuldade::before{
+  content: "";
+  display: none;
+  width: 4rem;
+  height:  0.1rem;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  left: 10rem;
+  bottom: -0.5rem;
+
+}
+
+
+.button-dificuldade:hover{
+  color: #ffffff;
+}
+
+.jogo{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  height: 20rem;
+  width: 20rem;
+  position: relative;
+}
+
+
+.button{
+  color: black;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  color: transparent;
+}
+#linha1,#linha2{
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+#linha3,#linha4{
+  background-color: #000000;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+}
+
+#linha1{
+  left: 6.6rem;
+}
+#linha2{
+  left: 13.3rem;
+}
+
+#linha4{
+  top: 6.6rem;
+}
+#linha3{
+  top: 13.3rem;
+}
+
+
+
+.inf{
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+
+#reiniciar{
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border:  none;
+  color: #fff;
+  background-color: black;
+  cursor: pointer;
+}
+.sair{
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (max-width:600px){
+  .tela{
+    width: 80%;
+    height:40rem;
+  }
+  .dificuldade,.jogo{
+    width: 100%;
+  }
+}

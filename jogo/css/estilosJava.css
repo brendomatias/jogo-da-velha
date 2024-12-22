@@ -1,0 +1,64 @@
+
+
+.fundo-verde{
+  background: linear-gradient(rgb(175, 242, 144),rgb(116, 244, 57), rgb(6, 149, 6));
+
+}
+
+.fundo-amarelo{
+  background: linear-gradient(rgb(245, 198, 54),rgb(232, 229, 7), rgb(136, 138, 14));
+
+}
+.fundo-vermelho{
+  background: linear-gradient(rgb(210, 8, 8),rgb(165, 9, 9), rgb(249, 23, 23));
+
+}
+
+.button-dificuldade.ativar-before::before{
+  content: "";
+  display: block;
+  width: 4rem;
+  height:  0.1rem;
+  background-color: rgba(255, 255, 255, 0.727);
+  position: absolute;
+  left: -0.1rem;
+  bottom: -0.5rem;
+  transition: 0.3s;
+}
+.button-dificuldade.desativar-before::before{
+  content: "";
+  display: block;
+  width: 0;
+  height:  0;
+  background-color: rgba(255, 255, 255, 0.727);
+  position: absolute;
+  left: 50%;
+  bottom: -0.5rem;
+  transition: 0.3s;
+
+
+}
+
+.verde{
+  color: rgb(0, 255, 0);
+}
+.amarelo{
+  color: rgb(246, 255, 0);
+}
+.vermelho{
+  color: rgb(255, 0, 0);
+}
+
+
+#linha5{
+  position: absolute;
+  display: none;
+  width: 100%;
+  top: 53.33px;
+  height: 2px;
+  background-color: rgb(87, 255, 30);
+  transform: r;
+}
+
+
+
